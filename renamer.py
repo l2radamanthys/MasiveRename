@@ -57,14 +57,21 @@ class MainFrame(tk.Frame):
         btn_quit = tk.Button(self, text="Salir", command= self.quit, padx=15, pady=5)
         btn_quit.grid(row=6, column=2, sticky=tk.W)
 
+        #
+        self.refresh_file_list()
+
 
     def select_folder(self):
+        """
+        """
         fpath = askdirectory()
         if fpath != None:
             self.path.set(fpath)
  
 
     def refresh_file_list(self):
+        """
+        """
         path = self.path.get()
         if path == "":
             path = os.getcwd()
@@ -78,6 +85,8 @@ class MainFrame(tk.Frame):
 
     
     def rename_files(self):
+        """
+        """
         _search = self.search.get()
         _replace = self.replace.get()
         path = self.path.get()
@@ -90,6 +99,7 @@ class MainFrame(tk.Frame):
                     print "error", nfile
                     pass
             self.refresh_file_list()
+
 
 def main():
     main = tk.Tk()
