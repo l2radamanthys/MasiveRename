@@ -110,9 +110,6 @@ def main():
     main.resizable(width=False, height=False)
     main.geometry("{0}x{1}".format(580,370))
     app = MainFrame(main)
-    app.width = 516
-
-    print main.winfo_screenmmwidth()
     main.mainloop()
 
 

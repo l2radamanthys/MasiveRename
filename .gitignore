@@ -1,3 +1,6 @@
 *.pyc
 *.swp
 *.bat
+#Archivos de Compilacion
+/build/dist/*
+/build/build/*
