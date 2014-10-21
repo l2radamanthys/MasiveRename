@@ -108,7 +108,7 @@ def main():
     main = tk.Tk()
     main.title('Renombrador Masivo')  
     main.resizable(width=False, height=False)
-    main.geometry("{0}x{1}".format(580,370))
+    #main.geometry("{0}x{1}".format(600,370))
     app = MainFrame(main)
     app.width = 516
 
